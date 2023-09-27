@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+<style>
+
+
+body {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/364/318/503/digital-art-illustration-artwork-cityscape-wallpaper-preview.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+main {
+    
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 20px;
+    
+}
+
+.card {
+    background-color: rgb(192, 223, 224);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    main {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+        align-content: center;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <p>You are now viewing the dash-board page where you can get access multiple web pages at a time.</p>
+    </header>
+
+    <main>
+   
+        <div class="card">
+            <h2>For any movie Details</h2>
+            <form id="movieForm" action="/dashboardSubmit">
+                <label for="movieName" >MOVIE NAME:</label>
+                <input type="text" placeholder="enter movie name" id="movieName" name="movieName" required>
+                <button type="submit" onclick="getMovieDetails()" >Search</button>
+            </form>
+        </div><br>
+
+
+        <div class="card">
+            <h2>To watch any telugu movies.</h2>
+            <p><a href="https://top.ibomma.day/telugu-movies/">click here to watch telugu movies (HD).</a></p>
+        </div><br>
+    
+        <div class="card">
+            <h2>To watch any MX-movies.</h2>
+            <p><a href="https://www.mxplayer.in/movies">click here to watch movies available on mx-player.(HD)</a></p>
+        </div><br>
+
+        <div class="card">
+            <h2>To watch any HOTSTAR-movies.</h2>
+            <p><a href="https://www.hotstar.com/in/home">click here to watch movies available on hotstar.(HD)</a></p>
+        </div><br>
+    
+        <div class="card">
+            <h2>To download any movies.</h2>
+            <p>click on the below link to download any movies of required quality</p>
+            <p><a href="https://ww4.5movierulz.pw/">click here to download movies.</a></p>
+        </div><br>
+   
+    
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Your Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>

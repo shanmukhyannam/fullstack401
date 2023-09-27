@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sign up Page</title>
+</head>
+<style>
+    body {
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/312/851/784/dolomiti-italy-autumn-lago-antorno-landscape-photography-desktop-hd-wallpaper-for-pc-tablet-and-mobile-3840%C3%972400-wallpaper-preview.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        background-color: #c4c2c2;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+
+    }
+
+    div {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 90%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    .background-image-example {
+    margin: 0;
+    padding: 0;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+<body>
+    <div>
+        <h1>SIGN-UP PAGE</h1>
+        <form action="/signupSubmit" method="post">
+
+            <label for="fullname">FULL NAME :</label>
+            <input type="text" name="fullname" required><br>
+
+            <label for="email">EMAIL ID :</label>
+            <input type="text" name="Email" required><br>
+
+            <label for="password">PASSWORD :</label>
+            <input type="password" name="password" required><br>
+
+            <button type="submit">SIGN UP</button>
+        </form>
+    </div>
+</body>
+</html>
